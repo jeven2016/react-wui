@@ -15,6 +15,16 @@ const ButtonInput = () => {
                 <div className="input-group">
                     <div className="label">http://</div>
                     <input type="text" className="input element" placeholder="......"/>
+                    <div className="dropdown">
+                        <i className="icon fa fa-angle-down"></i>
+                        <div className="info">Country</div>
+                        <div className="menu">
+                            <div className="item" data-value="0">China</div>
+                            <div className="item" data-value="1">USA</div>
+                            <a className="item" data-value="1" href="#"> Link</a>
+                            <div className="item active" data-value="2">Russian</div>
+                        </div>
+                    </div>
                     <div className="button-dropdown">
                         <input type="hidden" name="country"/>
                         <button className="button"><strong>Country</strong>&nbsp;<i className="icon fa fa-angle-down"></i>

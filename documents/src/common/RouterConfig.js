@@ -4,13 +4,14 @@
  */
 import React, {Component, PropTypes} from "react";
 import {Router, Route, IndexRoute} from "react-router";
-import {NoMatchComponent} from './NoMatchComponent'
+import NoMatchComponent from './NoMatchComponent'
 
-import ComponentHome from '../elements/layout/components/ComponentHome';
-import App from '../elements/App';
-import ButtonIndex from '../elements/layout/components/buttons/ButtonIndex';
-import InputIndex from '../elements/layout/components/input/InputIndex';
-import ButtonGroupIndex from '../elements/layout/components/button-group/ButtonGroupIndex';
+import ComponentHome from '../components/ComponentHome';
+import App from '../App';
+import ButtonIndex from '../components/buttons/ButtonIndex';
+import InputIndex from '../components/input/InputIndex';
+import ButtonGroupIndex from '../components/button-group/ButtonGroupIndex';
+import DropdownIndex from '../components/dropdown/DropdownIndex';
 
 /**
  * Router configuration
@@ -29,6 +30,7 @@ export default class RouterConfig extends Component {
                         <Route path="button" component={ButtonIndex}/>
                         <Route path="button-group" component={ButtonGroupIndex}/>
                         <Route path="input" component={InputIndex}/>
+                        <Route path="dropdown" component={DropdownIndex}/>
                     </Route>
                     <Route path="*" component={NoMatchComponent}/>
                 </Route>
