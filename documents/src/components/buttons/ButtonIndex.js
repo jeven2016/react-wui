@@ -7,7 +7,6 @@ import BlockButton from './BlockButton';
 import DisabledButton from './DisabledButton';
 import ButtonAddOn from './add-ons/ButtonAddOn';
 import ColorfulButton from './add-ons/ColorfulButton';
-import InvertedButton from './add-ons/InvertedButton';
 import OutlinedButton from './add-ons/OutlinedButton';
 import CircularButton from './add-ons/CircularButton';
 
@@ -31,7 +30,6 @@ export default class ButtonIndex extends Component {
             {/*Add-ons*/}
             <ButtonAddOn/>
             <ColorfulButton/>
-            <InvertedButton/>
             <OutlinedButton/>
             <CircularButton/>
         </div>);

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11dd6fa0-d600-4c18-8829-733fa3864392" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/InvertedButton.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/libs/wui/wui-bundle-min.css" afterPath="$PROJECT_DIR$/documents/libs/wui/wui-bundle-min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/common/_Style.scss" afterPath="$PROJECT_DIR$/documents/src/common/_Style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -118,12 +120,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dropdown.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dropdown.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dropdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonIndex.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CircularButton.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+              <folding>
+                <marker date="1481722811275" expanded="true" signature="1064:1104" ph="..." />
+                <marker date="1481722811275" expanded="true" signature="1150:1192" ph="..." />
+                <marker date="1481722811275" expanded="true" signature="1237:1277" ph="..." />
+                <marker date="1481722811275" expanded="true" signature="1323:1367" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,6 +239,8 @@
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/DropdownIndex.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/ButtonMenuItem.js" />
         <option value="$PROJECT_DIR$/src/Dropdown.js" />
+        <option value="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" />
+        <option value="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" />
       </list>
     </option>
   </component>
@@ -244,7 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -392,6 +422,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buttons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buttons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add-ons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="button-group" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-wui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -420,6 +532,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,18 +545,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/documents/src" />
-      <recent name="$PROJECT_DIR$/documents/src/elements" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/documents" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/documents/libs/wui" />
       <recent name="$PROJECT_DIR$/documents/libs" />
       <recent name="$PROJECT_DIR$/documents/src/elements/layout/components/input" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documents/src" />
+      <recent name="$PROJECT_DIR$/documents/src/elements" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/documents" />
     </key>
   </component>
   <component name="RunManager">
@@ -525,12 +638,13 @@
       <workItem from="1481282970036" duration="3208000" />
       <workItem from="1481290555289" duration="1843000" />
       <workItem from="1481351790090" duration="9507000" />
-      <workItem from="1481544402353" duration="1796000" />
+      <workItem from="1481544402353" duration="2014000" />
+      <workItem from="1481717907650" duration="2803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46008000" />
+    <option name="totallyTimeSpent" value="49029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="875" extended-state="0" />
@@ -565,13 +679,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/documents/libs/highlight/highlight.pack.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/libs/highlight/styles/vs.css" />
     <entry file="file://$PROJECT_DIR$/template.html" />
     <entry file="file://$PROJECT_DIR$/webpack-production.config.js">
@@ -765,13 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/BlockButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -949,9 +1049,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dropdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <marker date="1481722811275" expanded="true" signature="1064:1104" ph="..." />
+            <marker date="1481722811275" expanded="true" signature="1150:1192" ph="..." />
+            <marker date="1481722811275" expanded="true" signature="1237:1277" ph="..." />
+            <marker date="1481722811275" expanded="true" signature="1323:1367" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

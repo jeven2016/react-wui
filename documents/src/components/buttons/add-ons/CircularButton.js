@@ -35,41 +35,6 @@ export default class CircularButton extends Component {
     <i class="fa fa-microphone"/>
 </button>`}
             </Highlight>
-            <blockquote className="elem-line">
-                <p className="text color-blue">
-                    Inverted Circular Buttons 圆形按钮
-                </p>
-
-            </blockquote>
-            <div className="button-add-on-container bg-color-black">
-                <button className="inverted circle button blue outline">
-                    <i className="fa fa-google"></i>
-                </button>
-                <button className="inverted circle button brown outline">
-                    <i className="fa fa-facebook"></i>
-                </button>
-                <button className="inverted circle button green outline">
-                    <i className="fa fa-amazon"></i>
-                </button>
-                <button className="inverted circle button orange outline">
-                    <i className="fa fa-microphone"></i>
-                </button>
-            </div>
-            <Highlight className="html">
-                {`<button class="inverted circle button blue outline">
-    <i class="fa fa-google"></i>
-</button>
-<button class="inverted circle button brown outline">
-    <i class="fa fa-facebook"></i>
-</button>
-<button class="inverted circle button green outline">
-    <i class="fa fa-amazon"></i>
-</button>
-<button class="inverted circle button orange outline">
-    <i class="fa fa-microphone"></i>
-</button>`}
-
-            </Highlight>
         </div>);
     }
 
