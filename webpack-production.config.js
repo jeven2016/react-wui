@@ -25,7 +25,8 @@ module.exports = {
             "redux",
             "redux-logger",
             "redux-thunk",
-            'react-intl'
+            'react-intl',
+            'moment'
         ],
 
         "react-wui": ["react-wui"],

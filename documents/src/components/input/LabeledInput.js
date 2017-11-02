@@ -1,53 +1,162 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
+import React, {Component} from "react";
+import {Input, IconInput, Icon, InputGroup, Button} from "react-wui";
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-//?
-export default class LabeledInput extends Component {
-    render() {
-        return (
-            <div className="elem-line">
-                <blockquote className="text color-blue">Labeled Input</blockquote>
-                <div className="elem-line cross-line">
-                    <div className="input-group">
-                        <div className="label">$</div>
-                        <input type="text" className="input element" placeholder="Money..."/>
-                            <div className="label">
-                                <i className="fa fa-calculator"></i>
-                            </div>
-                    </div>
-
-                    <div className="input-group">
-                        <div className="label">$</div>
-                        <div className="label">
-                            <i className="fa fa-calculator"></i>
-                        </div>
-                        <input type="text" className="input element" placeholder="input..."/>
-                        <div className="label">$</div>
-                        <div className="label">$</div>
-                    </div>
-                </div>
-                <Highlight className="html">
-                    {`<div class="input-group">
-    <div class="label">$</div>
-    <input type="text" class="input element" placeholder="input..."/>
-    <div class="label">
-        <i class="fa fa-calculator"></i>
-    </div>
-</div>
-
-<div class="input-group">
-    <div class="label">$</div>
-    <div class="label">
-        <i class="fa fa-calculator"></i>
-    </div>
-    <input type="text" class="input element" placeholder="input..."/>
-    <div class="label">$</div>
-    <div className="label">$</div>
-</div>`
-                    }
-                </Highlight>
-            </div>
-        );
+export default class LabeledInput extends ComponentDescTemplate {
+    renderBlockquote() {
+        return "显示Label的输入框";
     }
 
+    renderComponent() {
+        return <div>
+            <div>
+                <InputGroup>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                    <Input/>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <Input/>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                    <Input/>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <InputGroup.Label>
+                        <Icon className="fa fa-calculator"/>
+                    </InputGroup.Label>
+                    <InputGroup.Label>
+                        <Icon className="fa fa-plane"/>
+                    </InputGroup.Label>
+                    <Input/>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                    <Input/>
+                    <InputGroup.Label>Info</InputGroup.Label>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <Input.IconInput leftIcon>
+                        <Input placeholder="search..."/>
+                        <Icon className="fa fa-search icon"/>
+                    </Input.IconInput>
+                    <Button>Search</Button>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup>
+                    <InputGroup.Label>
+                        <input type="radio"/>
+                    </InputGroup.Label>
+                    <Input/>
+                </InputGroup>
+            </div>
+
+        </div>;
+    }
+
+    renderReactCode() {
+        return `
+import {Input, IconInput, Icon, InputGroup, Button} from "react-wui";
+
+<InputGroup>
+    <InputGroup.Label>Info</InputGroup.Label>
+    <Input/>
+</InputGroup>
+
+<InputGroup>
+    <Input/>
+    <InputGroup.Label>Info</InputGroup.Label>
+</InputGroup>
+
+<InputGroup>
+    <InputGroup.Label>Info</InputGroup.Label>
+    <Input/>
+    <InputGroup.Label>Info</InputGroup.Label>
+</InputGroup>
+
+<InputGroup>
+    <InputGroup.Label>
+        <Icon className="fa fa-calculator"/>
+    </InputGroup.Label>
+    <InputGroup.Label>
+        <Icon className="fa fa-plane"/>
+    </InputGroup.Label>
+    <Input/>
+    <InputGroup.Label>Info</InputGroup.Label>
+</InputGroup>
+
+<InputGroup>
+    <InputGroup.Label>Info</InputGroup.Label>
+    <Input/>
+    <InputGroup.Label>Info</InputGroup.Label>
+</InputGroup>
+
+<InputGroup>
+    <Input.IconInput leftIcon>
+        <Input placeholder="search..."/>
+        <Icon className="fa fa-search icon"/>
+    </Input.IconInput>
+    <Button>Search</Button>
+</InputGroup>
+
+<InputGroup>
+    <InputGroup.Label>
+        <input type="radio"/>
+    </InputGroup.Label>
+    <Input/>
+</InputGroup>
+`;
+    }
+
+    renderHtmlCode() {
+        return `
+<div>
+    <div class="input-group">
+        <div class="label">Info</div>
+        <input type="text" class="input element" placeholder=""></div>
+    <br><br>
+    <div class="input-group"><input type="text" class="input element" placeholder="">
+        <div class="label">Info</div>
+    </div>
+    <br><br>
+    <div class="input-group">
+        <div class="label">Info</div>
+        <input type="text" class="input element" placeholder="">
+        <div class="label">Info</div>
+    </div>
+    <br><br>
+    <div class="input-group">
+        <div class="label"><i class="fa fa-calculator"></i></div>
+        <div class="label"><i class="fa fa-plane"></i></div>
+        <input type="text" class="input element" placeholder="">
+        <div class="label">Info</div>
+    </div>
+    <br><br>
+    <div class="input-group">
+        <div class="label">Info</div>
+        <input type="text" class="input element" placeholder="">
+        <div class="label">Info</div>
+    </div>
+    <br><br>
+    <div class="input-group">
+        <div class="icon-input element left-icon"><input type="text" class="input" placeholder="search..."><i
+                class="fa fa-search icon"></i></div>
+        <button class="button label" type="button"><!-- react-text: 161 -->Search<!-- /react-text --></button>
+    </div>
+    <br><br>
+    <div class="input-group">
+        <div class="label"><input type="radio" value="on"></div>
+        <input type="text" class="input element" placeholder="">
+    </div>
+</div>
+`;
+    }
 }

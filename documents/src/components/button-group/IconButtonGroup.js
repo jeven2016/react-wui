@@ -1,30 +1,46 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
+import React, {Component} from "react";
+import {ButtonGroup, Button} from "react-wui";
+import ComponentDescTemplate from "../ComponentDescTemplate";
 
-export default class IconButtonGroup extends Component {
-    render() {
-        return (<div>
-            <blockquote className="text color-blue">Icon Button Group</blockquote>
-            <div className="elem-line">
-                <div className="button-group">
-                    <button className="button"><i className="fa fa-wechat"/></button>
-                    <button className="button"><i className="fa fa-weibo"/></button>
-                    <button className="button"><i className="fa fa-qq"/>&nbsp;QQ</button>
-                    <button className="button"><i className="fa fa-facebook"/></button>
-                    <button className="button"><i className="fa fa-twitter"/></button>
-                </div>
-            </div>
-            <Highlight className="html">
-                {` <div class="button-group">
+
+export default class IconButtonGroup extends ComponentDescTemplate {
+    renderBlockquote() {
+        return "Button Group with icons";
+    }
+
+    renderComponent() {
+        return <ButtonGroup>
+            <Button><i className="fa fa-wechat"/></Button>
+            <Button><i className="fa fa-weibo"/></Button>
+            <Button><i className="fa fa-qq"/></Button>
+            <Button><i className="fa fa-facebook"/></Button>
+            <Button><i className="fa fa-twitter"/></Button>
+        </ButtonGroup>;
+    }
+
+    renderReactCode() {
+        return `
+import {ButtonGroup, Button} from "react-wui";
+
+<ButtonGroup>
+    <Button><i className="fa fa-wechat"/></Button>
+    <Button><i className="fa fa-weibo"/></Button>
+    <Button><i className="fa fa-qq"/></Button>
+    <Button><i className="fa fa-facebook"/></Button>
+    <Button><i className="fa fa-twitter"/></Button>
+</ButtonGroup>       
+`;
+    }
+
+    renderHtmlCode() {
+        return `
+<div class="button-group">
     <button class="button"><i class="fa fa-wechat"/></button>
     <button class="button"><i class="fa fa-weibo"/></button>
-    <button class="button"><i class="fa fa-qq"/>&nbsp;QQ</button>
+    <button class="button"><i class="fa fa-qq"/></button>
     <button class="button"><i class="fa fa-facebook"/></button>
     <button class="button"><i class="fa fa-twitter"/></button>
-</div>`
-                }
-            </Highlight>
-        </div>);
+</div>`;
     }
 
 }

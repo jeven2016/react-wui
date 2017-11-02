@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import Highlight from "react-highlight";
 import BasicDropdown  from './BasicDropdown';
 import DividerDropdown  from './DividerDropdown';
@@ -17,12 +17,12 @@ const DropdownIndex = () => {
             </blockquote>
 
             <BasicDropdown/>
-            <DividerDropdown/>
-            <ButtonDropdown/>
-            <CompactDropdown/>
-            <SimpleDropdown/>
-            <DisabledDropdown/>
-            <ButtonMenuItem/>
+            {/*<DividerDropdown/>*/}
+            {/*<ButtonDropdown/>*/}
+            {/*<CompactDropdown/>*/}
+            {/*<SimpleDropdown/>*/}
+            {/*<DisabledDropdown/>*/}
+            {/*<ButtonMenuItem/>*/}
 
         </div>
     );

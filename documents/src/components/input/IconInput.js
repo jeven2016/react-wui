@@ -1,35 +1,82 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
+import React, {Component} from "react";
+import {Input, Icon} from "react-wui";
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-export default class IconInput extends Component {
-    render() {
-        return (
-            <div className="elem-line">
-                <blockquote className="text color-blue">Icon Input</blockquote>
-                <div className="elem-line">
-                    <div className="icon-input">
-                        <input type="text" className="input" placeholder="icon input..."/>
-                        <i className="fa fa-search icon"></i>
-                    </div>
-                    &nbsp;&nbsp;
-                    <div className="icon-input left-icon">
-                        <input type="text" className="input" placeholder="icon input..."/>
-                        <i className="fa fa-search icon"></i>
-                    </div>
-                </div>
-                <Highlight className="html">
-                    {`<div type="text" class="icon-input">
-    <input class="input" placeholder="icon input...">
-        <i class="fa fa-search icon"></i>
-</div>
-<div class="icon-input left-icon">
-    <input type="text" class="input" placeholder="icon input...">
-        <i class="fa fa-search icon"></i>
-</div>`
-                    }
-                </Highlight>
+export default class IconInput extends ComponentDescTemplate {
+    renderBlockquote() {
+        return "显示Icon的输入框";
+    }
+
+    renderComponent() {
+        return <div>
+            <div>
+                <Input.IconInput>
+                    <Input placeholder="Icon input..."/>
+                    <Icon className="fa fa-search icon"/>
+                </Input.IconInput>
+                &nbsp;&nbsp;
+                <Input.IconInput leftIcon>
+                    <Input placeholder="Icon input..."/>
+                    <Icon className="fa fa-search icon"/>
+                </Input.IconInput>
             </div>
-        );
+            <br/>
+            <Input.IconInput size="large" block>
+                <Input placeholder="Icon input..."/>
+                <Icon className="fa fa-search icon"/>
+            </Input.IconInput>
+            <br/>
+            <Input.IconInput size="medium" block>
+                <Input placeholder="Icon input..."/>
+                <Icon className="fa fa-search icon"/>
+            </Input.IconInput>
+            <br/>
+            <Input.IconInput size="small" block>
+                <Input placeholder="Icon input..."/>
+                <Icon className="fa fa-search icon"/>
+            </Input.IconInput>
+
+        </div>;
+    }
+
+    renderReactCode() {
+        return `
+import {Input, Icon} from "react-wui";
+
+<Input.IconInput>
+    <Input placeholder="Icon input..."/>
+    <Icon className="fa fa-search icon"/>
+</Input.IconInput>
+
+<Input.IconInput leftIcon>
+    <Input placeholder="Icon input..."/>
+    <Icon className="fa fa-search icon"/>
+</Input.IconInput>  
+
+<Input.IconInput size="large" block>
+    <Input placeholder="Icon input..."/>
+    <Icon className="fa fa-search icon"/>
+</Input.IconInput>
+
+<Input.IconInput size="medium" block>
+    <Input placeholder="Icon input..."/>
+    <Icon className="fa fa-search icon"/>
+</Input.IconInput>
+ 
+<Input.IconInput size="small" block>
+    <Input placeholder="Icon input..."/>
+    <Icon className="fa fa-search icon"/>
+</Input.IconInput>
+`;
+    }
+
+    renderHtmlCode() {
+        return `
+<div class="icon-input">
+    <input type="text" class="input" placeholder="Icon input...">
+    <i class="fa fa-search icon"></i>
+</div>      
+`;
     }
 
 }

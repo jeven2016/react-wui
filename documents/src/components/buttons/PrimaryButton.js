@@ -1,45 +1,51 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import Highlight from "react-highlight";
+import {Button} from 'react-wui';
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-export default class PrimaryButton extends Component {
-    static propTypes = {};
-
-    constructor(args) {
-        super(args);
-        this.state = {}
+export default class PrimaryButton extends ComponentDescTemplate {
+    renderBlockquote() {
+        return 'Primary按钮';
     }
 
-    render() {
-        return (
-            <div>
-                <blockquote className="elem-line">
-                    <p className="text color-blue">Primary Button </p>
-                </blockquote>
-                <div className="elem-line">
-                    <button className="button primary">
-                        Create
-                    </button>
-                    <button className="button primary active">
-                        Active
-                    </button>
-                    <button className="button primary shadow">
-                        Shadow
-                    </button>
-                </div>
-                <Highlight className="html">
-                    {`
-<button class="button primary">
-    Create
+    renderComponent() {
+        return (<div>
+            <Button type="primary">
+                Primary
+            </Button>
+            <Button type="primary" active>
+                Active
+            </Button>
+            <Button type="primary" disabled>
+                Disabled
+            </Button>
+        </div>);
+    }
+
+    renderReactCode() {
+        return `
+//import this button from react-wui       
+import {Button} form 'react-wui';
+
+<Button type="primary">Primary</Button>
+
+<Button type="primary" active>Active</Button>
+
+<Button type="primary" disabled>Disabled</Button>`;
+    }
+
+    renderHtmlCode() {
+        return `
+<button class="primary button">
+    Primary
 </button>
-<button class="button primary active">
+<button class="primary button active">
     Active
 </button>
-<button class="button primary shadow">
-    Shadow
-</button>`}
-                </Highlight>
-            </div>
-        );
+<button class="primary button disabled">
+    Disabled
+</button>`;
     }
+
 
 }

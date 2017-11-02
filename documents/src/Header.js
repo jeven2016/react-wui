@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import {Link} from 'react-router';
 
 
@@ -13,11 +13,13 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                <ul className="navbar">
-                    <li className="item title">Wheel-UI</li>
-                    <li className="item">
-                       <Link to="/components">Components</Link>
-                    </li>
+                <ul className="primary navbar fixed top">
+                    <li className="title">Wheel-UI</li>
+                    <ul className="list">
+                        <li className="item">
+                            <Link to="/components" className="link">Components</Link>
+                        </li>
+                    </ul>
                 </ul>
             </div>
         );

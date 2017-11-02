@@ -1,50 +1,48 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import Highlight from "react-highlight";
+import {Button} from 'react-wui';
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-export default class ButtonSize extends Component {
-    static propTypes = {};
+export default class ButtonSize extends ComponentDescTemplate {
 
-    constructor(args) {
-        super(args);
-        this.state = {}
+    renderBlockquote() {
+        return '按鈕的大小';
     }
 
-    render() {
-        return (
-            <div>
-                <blockquote className="elem-line">
-                    <p className="text color-blue">Button Size</p>
-                </blockquote>
-                <div className="elem-line">
-                    <button className="large button">
-                        Large
-                    </button>
-                    <button className="button">
-                        Default
-                    </button>
-                    <button className="medium button">
-                        Medium
-                    </button>
-                    <button className="small button">
-                        Small
-                    </button>
-                </div>
-                <Highlight className="html">
-                    {`<button class="large button">
-    Large
-</button>
-<button class="button">
-    Default
-</button>
-<button class="medium button">
-    Medium
-</button>
-<button class="small button">
-    Small
-</button>`}
-                </Highlight>
-            </div>
-        );
+    renderComponent() {
+        return (<div>
+            <Button type="primary" size="large">
+                Large
+            </Button>
+            <Button type="primary" size="medium">
+                Medium
+            </Button>
+            <Button type="primary">
+                Default
+            </Button>
+            <Button type="primary" size="small">
+                Small
+            </Button>
+        </div>);
+    }
+
+    renderReactCode() {
+        return `
+//import this button from react-wui       
+import {Button} form 'react-wui';
+
+<Button type="primary" size="large">Large</Button>
+<Button type="primary" size="medium">Medium</Button>
+<Button type="primary">Default</Button>
+<Button type="primary" size="small">Small</Button>`;
+    }
+
+    renderHtmlCode() {
+        return `
+<button class="large primary button">Large</button>
+<button class="medium primary button">Medium</button>
+<button class="primary button">Default</button>
+<button class="small primary button">Small</button>`;
     }
 
 }

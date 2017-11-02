@@ -9,6 +9,11 @@ module.exports = {
 
     entry: {
         lib: [
+            //IE下Array.find方法报错，IE11及以下是不支持该类方法，需要在应用的入口类中优先加载该类库。
+            //https://stackoverflow.com/questions/33380063/what-is-the-best-way-to-include-babel-polyfill-using-multiple-entry-points
+            //https://babeljs.io/docs/usage/polyfill/#installation
+            'babel-polyfill',
+
             //使用代码热替换在开发的时候无需刷新页面即可看到更新，而且，它将构建的内容放入内在中，能够获得更快的构建编译性能，因此是官方非常推荐的一种构建方式。
             'webpack/hot/dev-server',
             'webpack/hot/only-dev-server',
@@ -27,7 +32,8 @@ module.exports = {
             "redux",
             "redux-logger",
             "redux-thunk",
-            'react-intl'
+            'react-intl',
+            'moment'
         ],
 
         "react-wui": ["react-wui"]
@@ -140,11 +146,12 @@ module.exports = {
     //https://github.com/webpack/webpack/issues/2145
     // devtool: 'cheap-module-eval-source-map',
     // devtool: 'source-map',
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
+    devtool: 'eval-source-map',// for development, 点开可以看到webpack://目录
 
     devServer: {
-        host: "192.168.31.108",
-        port: 8080,
+        host: "0.0.0.0",
+        port: 5800,
         historyApiFallback: true, // 当刷新当前页面会出现404错误，所以需要在web server上设置该参数。（History API）
         hot: true,
         inline: true,

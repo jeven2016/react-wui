@@ -1,12 +1,54 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
+import React, {Component} from "react";
+import {Button} from 'react-wui';
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-export default class BasicButton extends Component {
+export default class BasicButton extends ComponentDescTemplate {
     static propTypes = {};
 
-    constructor(args) {
-        super(args);
-        this.state = {}
+    renderBlockquote() {
+        return '普通按钮';
+    }
+
+    renderComponent() {
+        return (<div>
+            <Button onClick={() => alert('alert')}>
+                Alert
+            </Button>
+            <Button active>
+                Active
+            </Button>
+            <Button disabled>
+                Disabled
+            </Button>
+            <Button className="button clear-radius">
+                Clear-radius
+            </Button>
+        </div>);
+    }
+
+    renderHtmlCode() {
+        return `
+<button class="button">Alert</button>
+
+<button class="button active">Active</button>
+
+<button class="disabled button">Disabled</button>
+
+<button className="button clear-radius">Clear-radius</button>`;
+    }
+
+    renderReactCode() {
+        return `
+//import this button from react-wui       
+import {Button} form 'react-wui';
+        
+<Button onClick={()=> alert('alert')}>Alert</Button>
+
+<Button active>Active</Button>
+
+<Button disabled>Disabled</Button>
+
+<Button className="button clear-radius">Clear-radius</Button>`;
     }
 
     render() {
@@ -16,43 +58,8 @@ export default class BasicButton extends Component {
                     <h2 className="text color-blue">按钮</h2>
                     <p className="elem-line">默认情况下，UI提供两种风格的按钮。分别是灰色和Primay蓝色的按钮。但是通过<a href="#button-add-on">附属组件</a>可以获得更多丰富的按钮样式。
                     </p>
-                    <p className="elem-line text comment">以下示例中，class中如果有多个样式名，样式名的先后顺序不会对显示有任何影响。
-                        比如 <span className="text color-brown">class="button primary"</span>与
-                        <span className="text color-brown">class="primary button"</span>在显示上不会有差别.
-                    </p>
                 </blockquote>
-                <blockquote>
-                    <p className="text color-blue">Basic Button</p>
-                </blockquote>
-                <div className="elem-line">
-                    <button className="button">
-                        Create
-                    </button>
-                    <button className="button active">
-                        Active
-                    </button>
-                    <button className="button shadow">
-                        Shadow
-                    </button>
-                    <button className="button clear-radius">
-                        Clear-radius
-                    </button>
-                </div>
-                <Highlight className="html">
-
-                    {`<button class="button">
-    Create
-</button>
-<button class="button active">
-    Active
-</button>
-<button class="button shadow">
-    Shadow
-</button>
- <button className="button clear-radius">
-    Clear-radius
-</button>`}
-                </Highlight>
+                {super.render()}
             </div>
         );
     }

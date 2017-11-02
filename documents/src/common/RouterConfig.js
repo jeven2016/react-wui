@@ -2,7 +2,7 @@
  *
  * Created by zjtech on 16-7-29.
  */
-import React, {Component, PropTypes} from "react";
+import React, {Component} from "react";
 import {Router, Route, IndexRoute} from "react-router";
 import NoMatchComponent from './NoMatchComponent'
 
@@ -18,7 +18,7 @@ import DropdownIndex from '../components/dropdown/DropdownIndex';
  */
 export default class RouterConfig extends Component {
     static propTypes = {
-        history: PropTypes.object.isRequired
+        // history: PropTypes.object.isRequired
     };
 
     render() {

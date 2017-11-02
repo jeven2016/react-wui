@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from "react"
 import moment from 'moment'
 import {addWindowEventListener, removeWindowEventListener, preventEvent} from './EventHandlers'
 import slice from 'lodash/slice'
@@ -71,13 +71,13 @@ class DateHelper {
 }
 
 export default class DatePicker extends Component {
-    static propTypes = {
+ /*   static propTypes = {
         defaultDate: PropTypes.object,
         defaultFormat: PropTypes.string,
         value: PropTypes.object,
         isInline: PropTypes.bool,
         onChange: PropTypes.func
-    };
+    };*/
 
     static defaultProps = {
         defaultDate: moment(),

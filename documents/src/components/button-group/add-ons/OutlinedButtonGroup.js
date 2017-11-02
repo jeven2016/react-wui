@@ -1,40 +1,65 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
-
-const OutlinedButtonGroup = props => {
-    return (<div className="elem-line">
-        <blockquote>Outlined Button Group</blockquote>
-        <div className="button-group">
-            <button className="button black  outline">Black</button>
-            <button className="active button brown  outline">brown</button>
-            <button className="button pink  outline">pink</button>
-            <button className="button purple  outline">purple</button>
-            <button className="button violet  outline">violet</button>
-            <button className="button blue  outline">blue</button>
-            <button className="button teal  outline">teal</button>
-            <button className="button green  outline">green</button>
-            <button className="button yellow  outline">yellow</button>
-            <button className="button orange  outline">orange</button>
-            <button className="button red  outline">red</button>
-        </div>
-        <Highlight className="html">
-            {`<div className="button-group">
-    <button className="button black  outline">Black</button>
-    <button className="active button brown  outline">brown</button>
-    <button className="button pink  outline">pink</button>
-    <button className="button purple  outline">purple</button>
-    <button className="button violet  outline">violet</button>
-    <button className="button blue  outline">blue</button>
-    <button className="button teal  outline">teal</button>
-    <button className="button green  outline">green</button>
-    <button className="button yellow  outline">yellow</button>
-    <button className="button orange  outline">orange</button>
-    <button className="button red  outline">red</button>
-</div>`
-            }
-        </Highlight>
-    </div>);
-};
+import React, {Component} from "react";
+import {ButtonGroup, Button} from "react-wui";
+import ComponentDescTemplate from "../../ComponentDescTemplate";
 
 
-export default OutlinedButtonGroup;
+export default class OutlinedButtonGroup extends ComponentDescTemplate {
+
+    renderBlockquote() {
+        return "内空的按钮";
+    }
+
+    renderComponent() {
+        return <ButtonGroup outline>
+            <Button color="black" text="Black"/>
+            <Button color="brown">brown</Button>
+            <Button color="pink">pink</Button>
+            <Button color="purple">purple</Button>
+            <Button color="violet">violet</Button>
+            <Button color="blue">blue</Button>
+            <Button color="teal">teal</Button>
+            <Button color="green">green</Button>
+            <Button color="yellow">yellow</Button>
+            <Button color="orange">orange</Button>
+            <Button color="red">red</Button>
+        </ButtonGroup>;
+    }
+
+    renderReactCode() {
+        return `
+import {ButtonGroup, Button} from "react-wui";
+
+<ButtonGroup outline>
+    <Button color="black" text="Black"></Button>
+    <Button color="brown">brown</Button>
+    <Button color="pink">pink</Button>
+    <Button color="purple">purple</Button>
+    <Button color="violet">violet</Button>
+    <Button color="blue">blue</Button>
+    <Button color="teal">teal</Button>
+    <Button color="green">green</Button>
+    <Button color="yellow">yellow</Button>
+    <Button color="orange">orange</Button>
+    <Button color="red">red</Button>
+</ButtonGroup>
+`;
+    }
+
+    renderHtmlCode() {
+        return `
+<div class="button-group">
+    <button class="button black outline">black</button>
+    <button class="button brown outline">brown</button>
+    <button class="button pink outline">pink</button>
+    <button class="button purple outline">purple</button>
+    <button class="button violet outline">violet</button>
+    <button class="button blue outline">blue</button>
+    <button class="button teal outline">teal</button>
+    <button class="button green outline">green</button>
+    <button class="button yellow outline">yellow</button>
+    <button class="button orange outline">orange</button>
+    <button class="button red outline">red</button>
+</div>
+`;
+    }
+}

@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from "react"
 
 export default class Pagination extends Component {
     generateButtons() {
@@ -57,14 +57,14 @@ export default class Pagination extends Component {
 
 }
 
-Pagination.propTypes = {
+/*Pagination.propTypes = {
     visiblePages: PropTypes.number,
     totalPages: PropTypes.number.isRequired,
     currentPage: PropTypes.number.isRequired,
     goTo: PropTypes.func,
     goPrevious: PropTypes.func,
     goNext: PropTypes.func
-};
+};*/
 
 Pagination.defaultProps = {
     visiblePages: 5

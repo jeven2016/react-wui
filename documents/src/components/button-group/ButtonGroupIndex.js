@@ -1,12 +1,13 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import BasicButtonGroup from './BasicButtonGroup';
 import PrimaryButtonGroup from './PrimaryButtonGroup';
 import IconButtonGroup from './IconButtonGroup';
 import BlockButtonGroup from './BlockButtonGroup';
 import ColorfulButtonGroup from './add-ons/ColorfulButtonGroup';
-import InvertedButtonGroup from './add-ons/InvertedButtonGroup';
 import ButtonGroupAddOn from './add-ons/ButtonGroupAddOn';
 import OutlinedButtonGroup from './add-ons/OutlinedButtonGroup';
+import ButtonGroupSize from './add-ons/ButtonGroupSize';
+import ButtonGroupDisabled from './ButtonGroupDisabled';
 
 export default class ButtonGroupIndex extends Component {
 
@@ -24,8 +25,9 @@ export default class ButtonGroupIndex extends Component {
 
             <ButtonGroupAddOn/>
             <ColorfulButtonGroup/>
-            <InvertedButtonGroup/>
             <OutlinedButtonGroup/>
+            <ButtonGroupSize/>
+            <ButtonGroupDisabled/>
         </div>);
     }
 

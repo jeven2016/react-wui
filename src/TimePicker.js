@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from "react"
 import moment from 'moment'
 import {addWindowEventListener, removeWindowEventListener, preventEvent} from './EventHandlers'
 
@@ -160,13 +160,13 @@ export default class TimePicker extends Component {
     }
 }
 
-TimePicker.propTypes = {
+/*TimePicker.propTypes = {
     defaultTime: PropTypes.object,
     defaultFormat: PropTypes.string,
     value: PropTypes.object,
     isInline: PropTypes.bool,
     onChange: PropTypes.func
-};
+};*/
 
 TimePicker.defaultProps = {
     defaultTime: moment("0:0:0", "HH:mm:ss"),

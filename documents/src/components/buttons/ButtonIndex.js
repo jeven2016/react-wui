@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from "react";
 import BasicButton from './BasicButton';
 import PrimaryButton from './PrimaryButton';
 import ButtonSize from './ButtonSize';

@@ -1,7 +1,7 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from "react"
 
 export default class StatsTable extends Component {
-    static propTypes = {
+  /*  static propTypes = {
         data: PropTypes.arrayOf(PropTypes.shape({
             _id: PropTypes.string,
             subscriber: PropTypes.string,
@@ -11,7 +11,7 @@ export default class StatsTable extends Component {
             createTimeStamp: PropTypes.string,
             userIp: PropTypes.string
         }))
-    };
+    };*/
 
     constructor(args) {
         super(args);

@@ -1,13 +1,15 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from "react"
 import {isNull, isUndefined} from 'lodash'
 
 export default class Tab extends Component {
+/*
     static propTypes = {
         items: PropTypes.array,
         activeItem: PropTypes.string,
         defaultActiveItem: PropTypes.string,
         onChange: PropTypes.func
     };
+*/
 
     isValidValue(val) {
         return !isNull(val) && !isUndefined(val);

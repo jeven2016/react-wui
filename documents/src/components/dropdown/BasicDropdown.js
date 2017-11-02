@@ -1,37 +1,31 @@
-import React, {Component, PropTypes} from 'react';
-import Highlight from "react-highlight";
+import React, {Component} from "react";
+import ComponentDescTemplate from "../ComponentDescTemplate";
+import {Dropdown, Menu} from "react-wui";
 
-const BasicDropdown = () => {
-    return (
-        <div className="elem-line">
-            <blockquote className="text color-blue">Basic Dropdown 下拉列表</blockquote>
-            <div className="elem-line">
-                <div className="dropdown">
-                    <i className="icon fa fa-angle-down"></i>
-                    <div className="info">Country</div>
-                    <div className="menu">
-                        <div className="item" data-value="0">China</div>
-                        <div className="item" data-value="1">USA</div>
-                        <a className="item" data-value="1" href="#"> Link</a>
-                        <div className="item active" data-value="2">Russian</div>
-                    </div>
-                </div>
-            </div>
-            <Highlight className="html">
-                {`<div class="dropdown">
-    <i class="icon fa fa-angle-down"></i>
-    <div class="info">Country</div>
-    <div class="menu">
-        <div class="item" data-value="0">China</div>
-        <div class="item" data-value="1">USA</div>
-        <a class="item" data-value="1" href="#"> Link</a>
-        <div class="item active" data-value="2">Russian</div>
-    </div>
-</div>`
-                }
-            </Highlight>
-        </div>
-    );
-};
 
-export default BasicDropdown;
+export default class BasicDropdown extends ComponentDescTemplate {
+
+    renderBlockquote() {
+        return "普通下拉列表"
+    }
+
+    renderComponent() {
+        return <Dropdown>
+            <div className="info">Info</div>
+            <Menu>
+                <Menu.Item value="0">Action #1</Menu.Item>
+                <Menu.Item value="1">Action #2</Menu.Item>
+                <Menu.Item value="2">Action #3</Menu.Item>
+                <Menu.Item value="3">Action #4</Menu.Item>
+            </Menu>
+        </Dropdown>;
+    }
+
+    renderReactCode() {
+        return super.renderReactCode();
+    }
+
+    renderHtmlCode() {
+        return super.renderHtmlCode();
+    }
+}

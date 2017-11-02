@@ -1,34 +1,76 @@
 import React from 'react';
-import Highlight from "react-highlight";
+import {Input, Icon, InputGroup, Button} from "react-wui";
+import ComponentDescTemplate from '../ComponentDescTemplate';
 
-const FlexibleInput = () => {
-    return (
-        <div className="elem-line">
-            <blockquote className="text color-blue">Flexible Input Group 弹性输入框</blockquote>
-            <div className="elem-line cross-line">
-                <div className="input-group flexible">
-                    <div className="label">
-                        <i className="fa fa-calculator"></i>
-                    </div>
-                    <input type="text" className="input element" placeholder="input..."/>
-                    <a className="label primary button">GO</a>
-                </div>
+export default class FlexibleInput extends ComponentDescTemplate {
+
+    renderBlockquote() {
+        return "弹性输入框";
+    }
+
+    renderComponent() {
+        return (
+            <div>
+                <InputGroup block>
+                    <InputGroup.Label>
+                        <Icon className="fa fa-subway"/>
+                    </InputGroup.Label>
+                    <Input expanded/>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup block>
+                    <InputGroup.Label>
+                        <Icon className="fa fa-subway"/>
+                    </InputGroup.Label>
+                    <Input expanded/>
+                    <InputGroup.Label>
+                        End
+                    </InputGroup.Label>
+                </InputGroup>
+                <br/><br/>
+                <InputGroup block>
+                    <InputGroup.Label>
+                        <Icon className="fa fa-search"/>
+                    </InputGroup.Label>
+                    <Input expanded/>
+                    <Button color="green">GO</Button>
+                </InputGroup>
             </div>
-            <Highlight className="html">
-                {`<div class="input-group flexible">
-    <div class="label">
-        <i class="fa fa-calculator"></i>
-    </div>
-    <input type="text" class="input element" placeholder="input..."/>
-    <div class="label">
-        <i class="fa fa-calculator"></i>
-    </div>
-    <a class="label primary button">GO</a>
-</div>`
-                }
-            </Highlight>
-        </div>
-    );
-};
+        );
+    }
 
-export default FlexibleInput;
+    renderReactCode() {
+        return `
+import {Input, Icon, InputGroup, Button} from "react-wui";
+
+<InputGroup block>
+    <InputGroup.Label>
+        <Icon className="fa fa-subway"/>
+    </InputGroup.Label>
+    <Input expanded/>
+</InputGroup>
+
+<InputGroup block>
+    <InputGroup.Label>
+        <Icon className="fa fa-subway"/>
+    </InputGroup.Label>
+    <Input expanded/>
+    <InputGroup.Label>
+        End
+    </InputGroup.Label>
+</InputGroup>
+
+<InputGroup block>
+    <InputGroup.Label>
+        <Icon className="fa fa-search"/>
+    </InputGroup.Label>
+    <Input expanded/>
+    <Button color="green">GO</Button>
+</InputGroup>        
+`;
+    }
+
+    renderHtmlCode() {
+        return super.renderHtmlCode();
+    }
+}

@@ -1,4 +1,4 @@
-import React, {PureComponent, PropTypes} from 'react'
+import React, {PureComponent} from "react"
 import DatePicker from './DatePicker'
 import TimePicker from './TimePicker'
 
@@ -34,9 +34,9 @@ export default class DateTimePicker extends PureComponent {
 
 }
 
-DateTimePicker.propTypes = {
+/*DateTimePicker.propTypes = {
     defaultDate: PropTypes.object,
     value: PropTypes.object,
     onDateChange: PropTypes.func,
     onTimeChange: PropTypes.func
-};
+};*/
