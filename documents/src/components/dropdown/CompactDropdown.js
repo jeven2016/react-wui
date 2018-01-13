@@ -1,49 +1,36 @@
 import React, {Component} from "react";
-import Highlight from "react-highlight";
+import ComponentDescTemplate from "../ComponentDescTemplate";
+import {Dropdown, Menu, Button, ButtonGroup, Icon} from "react-wui";
 
-const CompactDropdown = () => {
-    return (
-        <div className="elem-line">
-            <blockquote className="text color-blue">Compact Dropdown (no max-width defined) 自适应宽度</blockquote>
-            <div className="elem-line">
-                <div className="elem-line">
-                    <div className="dropdown without-min-width">
-                        <i className="icon fa fa-angle-down"></i>
+export default class CompactDropdown extends ComponentDescTemplate {
 
-                        <div className="info">Country</div>
-                        <ul className="menu">
-                            <li className="divider"></li>
-                            <li className="item ">China</li>
-                            <li className="divider"></li>
-                            <li className="item">USA</li>
-                            <li className="divider"></li>
-                            <li className="item">Russian</li>
-                            <li className="divider"></li>
-                            <li className="item ">English</li>
-                        </ul>
-                    </div>
-                </div>
+    renderBlockquote() {
+        return "组合";
+    }
+
+    renderComponent() {
+        return (
+            <div>
+            <Dropdown type="button">
+                <ButtonGroup>
+                    <Button outline color="green">bottom left</Button>
+                    <Button color="green"><Icon className="fa fa-arrow-down"/></Button>
+                </ButtonGroup>
+                <Menu>
+                    <Menu.Item value={2} text="Action 2"/>
+                    <Menu.Item value={3} text="Action 3"/>
+                    <Menu.Item value={4} text="Action 4"/>
+                </Menu>
+            </Dropdown>
             </div>
-            <Highlight className="html">
-                {`<div className="dropdown without-min-width">
-    <i className="icon fa fa-angle-down"></i>
+        );
+    }
 
-    <div className="info">Country</div>
-    <ul className="menu">
-        <li className="divider"></li>
-        <li className="item ">China</li>
-        <li className="divider"></li>
-        <li className="item">USA</li>
-        <li className="divider"></li>
-        <li className="item">Russian</li>
-        <li className="divider"></li>
-        <li className="item ">English</li>
-    </ul>
-</div>`
-                }
-            </Highlight>
-        </div>
-    );
-};
+    renderReactCode() {
+        return super.renderReactCode();
+    }
 
-export default CompactDropdown;
+    renderHtmlCode() {
+        return super.renderHtmlCode();
+    }
+}

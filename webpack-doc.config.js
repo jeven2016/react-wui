@@ -23,6 +23,7 @@ module.exports = {
 
         //react related libraries
         rl: [
+            "classnames",
             "react",
             "react-dom",
             "react-motion",

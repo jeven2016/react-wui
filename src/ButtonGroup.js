@@ -16,6 +16,7 @@ export default class ButtonGroup extends Component {
             size,
             outline,
             circle,
+            block
         } = this.props;
 
         let map = new Map();
@@ -25,6 +26,7 @@ export default class ButtonGroup extends Component {
         setValueInMap(map, 'disabled', disabled ? "disabled" : null);
         setValueInMap(map, 'outline', outline ? "outline" : null);
         setValueInMap(map, 'circle', circle ? "circle" : null);
+        setValueInMap(map, 'block', block ? "block" : null);
 
         if (map.size > 0) {
             let buttonClassNameSuffix = generateClassName(map);

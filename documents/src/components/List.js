@@ -18,7 +18,7 @@ export default class List extends Component {
 
                 <li className="item"><Link to="/components/input">Input 输入框</Link></li>
                 <li className="item"><Link to="/components/dropdown">Dropdown 下拉列表</Link></li>
-                <li className="item">Card 卡片</li>
+                <li className="item"><Link to="/components/card">Card 卡片</Link></li>
                 <li className="item">Layout 布局</li>
                 <li className="item">Form 表单</li>
                 <li className="item">Dialog 对话框</li>

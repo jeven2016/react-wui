@@ -1,16 +1,23 @@
 import React, {Component} from "react";
+import {isString} from "lodash";
 
 export const isArray = (value) => {
     // return Object.prototype.toString.call(value) === "[object Array]";
     return Array.isArray(value);
 };
 
+export const updateChildrenBySetting = (children, newSettings) => {
+    let newChildren = React.Children.map(children, elem =>
+        React.cloneElement(elem, newSettings)
+    );
+    return newChildren;
+};
+
+
 export const updateChildren = (children, map, newSettings) => {
     let newChildren = children;
     if (children && isArray(children) && map.size > 0) {
-        newChildren = React.Children.map(children, elem =>
-            React.cloneElement(elem, newSettings)
-        );
+        newChildren = updateChildrenBySetting(children, newSettings);
     }
     return newChildren;
 };
@@ -42,9 +49,12 @@ export const generateClassName = (map, classNameSuffix) => {
 };
 
 //split the class by blank space
-const _splitClassName = (className) => className.split(" ").filter(cls => {
-    return cls
-});
+const _splitClassName = (className) => {
+    if (!className) {
+        return [];
+    }
+    return className.split(" ");
+};
 
 /**
  * Check if the element has a specified class
@@ -54,6 +64,10 @@ const _splitClassName = (className) => className.split(" ").filter(cls => {
  * @return array
  */
 export const hasClass = (elem, classNameOrArray, clsArray/*optional*/) => {
+    if (!classNameOrArray) {
+        return false;
+    }
+
     if (!clsArray) {
         clsArray = _splitClassName(elem.props.className)
     }
@@ -75,9 +89,16 @@ export const appendClassIfAbsent = (elem, className) => {
     return elem.props.className;
 };
 
+export const removeClass = (className, classToRemove) => {
+    if (!className) {
+        return "";
+    }
+    return className.replace(classToRemove, "");
+};
+
 /**
  * Toggle the class and return it
- * @param elem
+ * @param elem NodeElement or className string
  * @param className
  * @return {string|*}
  */
@@ -85,7 +106,9 @@ export const toggleClass = (elem, className) => {
     if (!className) {
         throw  new Error(`The className parameter(${className}) is invalid.`)
     }
-    let clsArray = _splitClassName(elem.props.className);
+
+    let cls = isString(elem) ? elem : elem.props.className;
+    let clsArray = _splitClassName(cls);
     if (hasClass(elem, className, clsArray)) {
         clsArray = clsArray.filter(value => value !== className);
     } else {
@@ -93,4 +116,14 @@ export const toggleClass = (elem, className) => {
     }
 
     return clsArray.join(" ");
+};
+
+export const getRandomValue = () => {
+    return Math.random();
+};
+
+export const getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 };

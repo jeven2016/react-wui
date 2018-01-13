@@ -12,6 +12,7 @@ import ButtonIndex from '../components/buttons/ButtonIndex';
 import InputIndex from '../components/input/InputIndex';
 import ButtonGroupIndex from '../components/button-group/ButtonGroupIndex';
 import DropdownIndex from '../components/dropdown/DropdownIndex';
+import CardIndex from '../components/card/CardIndex';
 
 /**
  * Router configuration
@@ -31,6 +32,7 @@ export default class RouterConfig extends Component {
                         <Route path="button-group" component={ButtonGroupIndex}/>
                         <Route path="input" component={InputIndex}/>
                         <Route path="dropdown" component={DropdownIndex}/>
+                        <Route path="card" component={CardIndex}/>
                     </Route>
                     <Route path="*" component={NoMatchComponent}/>
                 </Route>

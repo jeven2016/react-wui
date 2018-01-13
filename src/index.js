@@ -6,15 +6,19 @@ import Pagination from "./Pagination.js";
 
 
 //new
-import Button from "./Button";
+import Button from "./button/Button";
 import ButtonGroup from "./ButtonGroup";
 import Input from "./Input";
 import Icon from "./Icon";
 import InputGroup from "./InputGroup.js";
-import Dropdown from "./Dropdown.js";
-import Menu from "./Menu.js";
+import {addWindowEventListener, removeWindowEventListener, preventEvent} from "./event/EventFuntions"
 
-import {addWindowEventListener, removeWindowEventListener, preventEvent} from "./EventHandlers"
+export {default as Dropdown} from "./dropdown";
+export {default as WindowEventHandler} from "./event";
+export {default as Menu} from "./menu";
+export {default as Divider} from "./divider";
+export {default as Card} from "./card";
+
 
 export {
     Button,
@@ -22,7 +26,6 @@ export {
     Input,
     Icon,
     InputGroup,
-    Menu,
 
     addWindowEventListener,
     removeWindowEventListener,
@@ -31,6 +34,5 @@ export {
     DatePicker,
     TimePicker,
     Tab,
-    Pagination,
-    Dropdown
+    Pagination
 };

@@ -1,49 +1,66 @@
 import React, {Component} from "react";
-import Highlight from "react-highlight";
+import ComponentDescTemplate from "../ComponentDescTemplate";
+import {Dropdown, Menu, Button, Divider, Icon} from "react-wui";
+
+export default class DividerDropdown extends ComponentDescTemplate {
+
+    renderBlockquote() {
+        return "菜单中使用分隔符"
+    }
 
 
-const DividerDropdown = () => {
-    return (
-        <div className="elem-line">
-            <blockquote className="text color-blue">Dropdown with divider 带分割线的下拉列表</blockquote>
-            <div className="elem-line">
-                <div className="dropdown">
-                    <i className="icon fa fa-angle-down"></i>
+    renderComponent() {
+        return <Dropdown triggerBy="click" type="button">
+            <Button>Button</Button>
+            <Menu>
+                <Divider/>
+                <Menu.Item value={1} text="Action 1"></Menu.Item>
+                <Divider/>
+                <Menu.Item value={2} text="Action 2"/>
+                <Divider/>
+                <Menu.Item value={3} text="Action 3"/>
+                <Divider/>
+                <Menu.Item value={4} text="Action 4"/>
+            </Menu>
+        </Dropdown>;
+    }
 
-                    <div className="info">Country</div>
-                    <ul className="menu">
-                        <li className="divider"></li>
-                        <li className="item ">China</li>
-                        <li className="divider"></li>
-                        <li className="item">USA</li>
-                        <li className="divider"></li>
-                        <li className="item">Russian</li>
-                        <li className="divider"></li>
-                        <li className="item ">English</li>
-                    </ul>
-                </div>
-            </div>
-            <Highlight className="html">
-                {`<div class="dropdown without-min-width">
+    renderReactCode() {
+        return `
+import {Dropdown, Menu, Button, Divider} from "react-wui";
+        
+<Dropdown triggerBy="click" type="button">
+    <Button>Button</Button>
+    <Menu>
+        <Divider/>
+        <Menu.Item value={1} text="Action 1"/>
+        <Divider/>
+        <Menu.Item value={2} text="Action 2"/>
+        <Divider/>
+        <Menu.Item value={3} text="Action 3"/>
+        <Divider/>
+        <Menu.Item value={4} text="Action 4"/>
+    </Menu>
+</Dropdown>
+`
+    }
 
-    <!-- icon 是dropdown内部样式，但fa fa-angle-down是源自font awesome的样式 -->
-    <i class="icon fa fa-angle-down"></i>
+    renderHtmlCode() {
+        return `
+<div class="button-dropdown">
+    <button class="button" type="button"></button>
+    <div class="menu">
+        <div class="divider"></div>
+        <div class="item" data-value="1"></div>
+        <div class="divider"></div>
+        <div class="item" data-value="2"></div>
+        <div class="divider"></div>
+        <div class="item" data-value="3"></div>
+        <div class="divider"></div>
+        <div class="item" data-value="4"></div>
+    </div>
+</div>
+`
+    }
 
-    <div class="info">Country</div>
-    <ul class="menu">
-        <li class="item ">China</li>
-        <li class="divider"></li>
-        <li class="item">USA</li>
-        <li class="divider"></li>
-        <li class="item">Russian</li>
-        <li class="divider"></li>
-        <li class="item ">English</li>
-    </ul>
-</div>`
-                }
-            </Highlight>
-        </div>
-    );
-};
-
-export default DividerDropdown;
+}

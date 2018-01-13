@@ -1,12 +1,8 @@
-import React, {Component} from "react";
-import Highlight from "react-highlight";
-import BasicDropdown  from './BasicDropdown';
-import DividerDropdown  from './DividerDropdown';
-import ButtonDropdown  from './ButtonDropdown';
-import CompactDropdown  from './CompactDropdown';
-import SimpleDropdown  from './SimpleDropdown';
-import DisabledDropdown  from './DisabledDropdown';
-import ButtonMenuItem  from './ButtonMenuItem';
+import React from "react";
+import BasicDropdown from './BasicDropdown';
+import DividerDropdown from './DividerDropdown';
+import MenuPosition from "./MenuPosition";
+import CompactDropdown from "./CompactDropdown";
 
 const DropdownIndex = () => {
     return (
@@ -17,12 +13,9 @@ const DropdownIndex = () => {
             </blockquote>
 
             <BasicDropdown/>
-            {/*<DividerDropdown/>*/}
-            {/*<ButtonDropdown/>*/}
-            {/*<CompactDropdown/>*/}
-            {/*<SimpleDropdown/>*/}
-            {/*<DisabledDropdown/>*/}
-            {/*<ButtonMenuItem/>*/}
+            <DividerDropdown/>
+            <MenuPosition/>
+            <CompactDropdown/>
 
         </div>
     );

@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import moment from 'moment'
-import {addWindowEventListener, removeWindowEventListener, preventEvent} from './EventHandlers'
+import {addWindowEventListener, removeWindowEventListener, preventEvent} from './event/EventFuntions'
 
 let menuType = {
     hour: 0,

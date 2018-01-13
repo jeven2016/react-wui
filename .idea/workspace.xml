@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11dd6fa0-d600-4c18-8829-733fa3864392" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/InvertedButtonGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documents/src/components/input/ButtonInput.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc" afterPath="$PROJECT_DIR$/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/libs/wui/wui-bundle-min.css" afterPath="$PROJECT_DIR$/documents/libs/wui/wui-bundle-min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/App.js" afterPath="$PROJECT_DIR$/documents/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/Header.js" afterPath="$PROJECT_DIR$/documents/src/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/common/RouterConfig.js" afterPath="$PROJECT_DIR$/documents/src/common/RouterConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/common/_Style.scss" afterPath="$PROJECT_DIR$/documents/src/common/_Style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/ComponentHome.js" afterPath="$PROJECT_DIR$/documents/src/components/ComponentHome.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/List.js" afterPath="$PROJECT_DIR$/documents/src/components/List.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/BasicButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/BasicButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/BlockButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/BlockButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/ButtonGroupIndex.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/ButtonGroupIndex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/IconButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/IconButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/PrimaryButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/PrimaryButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/ButtonGroupAddOn.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/ButtonGroupAddOn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/ColorfulButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/ColorfulButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/OutlinedButtonGroup.js" afterPath="$PROJECT_DIR$/documents/src/components/button-group/add-ons/OutlinedButtonGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/BasicButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/BasicButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/BlockButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/BlockButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/ButtonSize.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/ButtonSize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/DisabledButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/DisabledButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/IconButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/IconButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/PrimaryButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/PrimaryButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/ButtonAddOn.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/ButtonAddOn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/ColorfulButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/ColorfulButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/OutlinedButton.js" afterPath="$PROJECT_DIR$/documents/src/components/buttons/add-ons/OutlinedButton.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/ButtonDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/ButtonDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/ButtonMenuItem.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/ButtonMenuItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/CompactDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/CompactDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/DisabledDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/DisabledDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/DividerDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/DividerDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/DropdownIndex.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/DropdownIndex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/dropdown/SimpleDropdown.js" afterPath="$PROJECT_DIR$/documents/src/components/dropdown/SimpleDropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/BasicInput.js" afterPath="$PROJECT_DIR$/documents/src/components/input/BasicInput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/FlexibleInput.js" afterPath="$PROJECT_DIR$/documents/src/components/input/FlexibleInput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/IconInput.js" afterPath="$PROJECT_DIR$/documents/src/components/input/IconInput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/InputIndex.js" afterPath="$PROJECT_DIR$/documents/src/components/input/InputIndex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/InputSize.js" afterPath="$PROJECT_DIR$/documents/src/components/input/InputSize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/src/components/input/LabeledInput.js" afterPath="$PROJECT_DIR$/documents/src/components/input/LabeledInput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DatePicker.js" afterPath="$PROJECT_DIR$/src/DatePicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DateTimePicker.js" afterPath="$PROJECT_DIR$/src/DateTimePicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dropdown.js" afterPath="$PROJECT_DIR$/src/Dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pagination.js" afterPath="$PROJECT_DIR$/src/Pagination.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tab.js" afterPath="$PROJECT_DIR$/src/Tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Table.js" afterPath="$PROJECT_DIR$/src/Table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TimePicker.js" afterPath="$PROJECT_DIR$/src/TimePicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack-doc.config.js" afterPath="$PROJECT_DIR$/webpack-doc.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack-production.config.js" afterPath="$PROJECT_DIR$/webpack-production.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,100 +22,36 @@
     <favorites_list name="react-wui" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack-doc.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack-doc.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-              <folding>
-                <marker date="1509615201000" expanded="true" signature="297:328" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="312:328" ph="[...]" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoMatchComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/src/common/NoMatchComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouterConfig.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/src/common/RouterConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-              <folding>
-                <marker date="1509615201000" expanded="false" signature="51:68" ph="..." />
-                <marker date="1509615201000" expanded="true" signature="656:699" ph="{&quot;history&quot;: PropTypes.object.isRequired...}" />
-                <marker date="1509615201000" expanded="true" signature="656:1425" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="715:1423" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="746:1406" ph="&lt;Router/&gt;" />
-                <marker date="1509615201000" expanded="true" signature="800:1384" ph="&lt;Route/&gt;" />
-                <marker date="1509615201000" expanded="true" signature="853:1292" ph="&lt;Route/&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Button.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/src/common/_Style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding>
-                <marker date="1509615201000" expanded="true" signature="734:739" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicButton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/BasicButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <marker date="1509615201000" expanded="false" signature="7:24" ph="..." />
-                <marker date="1509615201000" expanded="true" signature="1257:1262" ph="..." />
-                <marker date="1509615201000" expanded="true" signature="1257:1271" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="1257:1719" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="1286:1717" ph="{...}" />
-                <marker date="1509615201000" expanded="true" signature="1317:1700" ph="&lt;div/&gt;" />
-                <marker date="1509615201000" expanded="true" signature="1361:1648" ph="&lt;blockquote/&gt;" />
-                <marker date="1509615201000" expanded="true" signature="1481:1618" ph="&lt;p/&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Dropdown.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Dropdown.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="BasicDropdown.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -222,7 +104,6 @@
         <option value="$PROJECT_DIR$/documents/src/common/NoMatchComponent.js" />
         <option value="$PROJECT_DIR$/documents/src/common/RouterConfig.js" />
         <option value="$PROJECT_DIR$/documents/src/components/List.js" />
-        <option value="$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/DividerDropdown.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/ButtonDropdown.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/CompactDropdown.js" />
@@ -230,7 +111,6 @@
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/DisabledDropdown.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/DropdownIndex.js" />
         <option value="$PROJECT_DIR$/documents/src/components/dropdown/ButtonMenuItem.js" />
-        <option value="$PROJECT_DIR$/src/Dropdown.js" />
         <option value="$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js" />
         <option value="$PROJECT_DIR$/documents/src/components/buttons/add-ons/CircularButton.js" />
         <option value="$PROJECT_DIR$/documents/src/components/button-group/ButtonGroupIndex.js" />
@@ -238,6 +118,8 @@
         <option value="$PROJECT_DIR$/documents/src/components/button-group/add-ons/ColorfulButtonGroup.js" />
         <option value="$PROJECT_DIR$/node_modules/redux/lib/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/Dropdown.js" />
+        <option value="$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js" />
       </list>
     </option>
   </component>
@@ -295,6 +177,11 @@
               <item name="react-wui" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-wui" type="462c0819:PsiDirectoryNode" />
               <item name="documents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-wui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-wui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -445,15 +332,16 @@
       <workItem from="1501316089877" duration="115000" />
       <workItem from="1508159633447" duration="1262000" />
       <workItem from="1508239750366" duration="5077000" />
-      <workItem from="1509630776526" duration="91000" />
+      <workItem from="1509630776526" duration="1937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66120000" />
+    <option name="totallyTimeSpent" value="67966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="874" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25017717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -461,7 +349,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3368984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23262031" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -640,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/src/components/dropdown/DividerDropdown.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -696,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dropdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documents/src/components/buttons/ButtonIndex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -735,6 +609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,8 +722,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/src/components/dropdown/BasicDropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>

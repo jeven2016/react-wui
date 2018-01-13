@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {addWindowEventListener, removeWindowEventListener, preventEvent} from './EventHandlers'
+import {addWindowEventListener, removeWindowEventListener, preventEvent} from './event/EventFuntions'
 
 export default class WindowEventComponent$ extends Component {
     constructor(props) {

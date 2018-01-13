@@ -27,12 +27,12 @@ export default class ComponentDescTemplate extends Component {
         return null;
     }
 
-    showCode() {
+    _showCode() {
         let showState = !this.state.showCode;
         this.setState({showCode: showState});
     }
 
-    renderSourceCode(type) {
+    _renderSourceCode(type) {
         this.setState({
             sourceCodeType: type
         });
@@ -58,10 +58,10 @@ export default class ComponentDescTemplate extends Component {
             code = <div className="folder card border" style={{width: '100%'}}>
                 <div className="card-header gray" style={{height: '2rem'}}>
                     <div className="button-group clear-border">
-                        <button className={htmlBtnClass} onClick={this.renderSourceCode.bind(this, 'html')}>
+                        <button className={htmlBtnClass} onClick={this._renderSourceCode.bind(this, 'html')}>
                             Html
                         </button>
-                        <button className={reactBtnClass} onClick={this.renderSourceCode.bind(this, 'react')}>
+                        <button className={reactBtnClass} onClick={this._renderSourceCode.bind(this, 'react')}>
                             React
                         </button>
                     </div>
@@ -81,7 +81,7 @@ export default class ComponentDescTemplate extends Component {
                 <blockquote>
                     <div className="text color-blue">
                         {this.renderBlockquote()} &nbsp;
-                        <i className="fa fa-code pull-right" style={{cursor: 'pointer'}} onClick={::this.showCode}/>
+                        <i className="fa fa-code pull-right" style={{cursor: 'pointer'}} onClick={::this._showCode}/>
                     </div>
                 </blockquote>
                 <div className="elem-line">
