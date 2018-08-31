@@ -11,7 +11,7 @@ export default class OutlinedButtonGroup extends ComponentDescTemplate {
 
     renderComponent() {
         return <ButtonGroup outline>
-            <Button color="black" text="Black"/>
+            <Button color="black">black</Button>
             <Button color="brown">brown</Button>
             <Button color="pink">pink</Button>
             <Button color="purple">purple</Button>

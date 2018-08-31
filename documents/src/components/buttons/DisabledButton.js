@@ -12,7 +12,7 @@ export default class DisabledButton extends ComponentDescTemplate {
     renderComponent() {
         return <div>
             <div className="elem-line">
-                <Button disabled>Disabled</Button>
+                <Button disabled onClick={()=>alert("disabled")}>Disabled2</Button>
                 <a className="button primary disabled">Disabled</a>
                 <button className="button" disabled>Disabled</button>
             </div>

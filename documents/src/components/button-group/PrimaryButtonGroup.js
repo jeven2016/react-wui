@@ -9,9 +9,9 @@ export default class PrimaryButtonGroup extends ComponentDescTemplate {
     }
 
     renderComponent() {
-        return <ButtonGroup type="primary">
-            <Button>Create</Button>
-            <Button>Modify</Button>
+        return <ButtonGroup>
+            <Button type="primary">Create</Button>
+            <Button disabled>Disabled</Button>
             <Button>Delete</Button>
             <Button>View</Button>
         </ButtonGroup>;
@@ -21,12 +21,12 @@ export default class PrimaryButtonGroup extends ComponentDescTemplate {
         return `
 import {ButtonGroup, Button} from "react-wui";
 
-<ButtonGroup type="primary">
-    <Button>Create</Button>
-    <Button>Modify</Button>
+<ButtonGroup>
+    <Button type="primary">Create</Button>
+    <Button disabled>Disabled</Button>
     <Button>Delete</Button>
     <Button>View</Button>
-</ButtonGroup>        
+</ButtonGroup>;  
 `;
     }
 

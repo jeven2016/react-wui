@@ -11,7 +11,7 @@ export default class ColorfulButtonGroup extends ComponentDescTemplate {
 
     renderComponent() {
         return <ButtonGroup>
-            <Button color="black" text="Black" nativeType="submit"></Button>
+            <Button color="black" nativeType="submit">Black</Button>
             <Button color="brown">brown</Button>
             <Button color="pink">pink</Button>
             <Button color="purple">purple</Button>

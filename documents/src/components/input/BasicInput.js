@@ -8,14 +8,20 @@ export default class BasicInput extends ComponentDescTemplate {
     }
 
     renderComponent() {
-        return <Input placeholder="text..."/>;
+        return <div>
+            <Input placeholder="text..."/>&nbsp;&nbsp;
+            <Input placeholder="disabled" disabled/>&nbsp;&nbsp;
+            <Input placeholder="readOnly" readOnly={true}/>
+        </div>;
     }
 
     renderReactCode() {
         return `
 import {Input} from "react-wui";
 
-<Input placeholder="text..."/>        
+<Input placeholder="text..."/> 
+<Input placeholder="disabled" disabled/>  
+<Input placeholder="readOnly" readOnly={true}/>     
 `;
     }
 

@@ -10,11 +10,11 @@ export default class ButtonGroupDisabled extends ComponentDescTemplate {
 
     renderComponent() {
         return <div>
-            <ButtonGroup disabled>
-                <Button>Create</Button>
-                <Button>Modify</Button>
-                <Button>Delete</Button>
-                <Button>View</Button>
+            <ButtonGroup>
+                <Button disabled onClick={()=>alert("create")}>Create</Button>
+                <Button disabled onClick={()=>alert("Modify")}>Modify</Button>
+                <Button disabled>Delete</Button>
+                <Button disabled>View</Button>
             </ButtonGroup>
         </div>;
     }
@@ -23,12 +23,12 @@ export default class ButtonGroupDisabled extends ComponentDescTemplate {
         return `
 import {ButtonGroup, Button} from "react-wui";
 
-<ButtonGroup disabled>
-    <Button>Create</Button>
-    <Button>Modify</Button>
-    <Button>Delete</Button>
-    <Button>View</Button>
-</ButtonGroup>
+<ButtonGroup>
+    <Button disabled onClick={()=>alert("create")}>Create</Button>
+    <Button disabled onClick={()=>alert("Modify")}>Modify</Button>
+    <Button disabled>Delete</Button>
+    <Button disabled>View</Button>
+</ButtonGroup>    
 `;
     }
 

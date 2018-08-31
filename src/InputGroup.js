@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import {updateChildrenByCallback, appendClassIfAbsent, hasClass, setValueInMap, generateClassName} from "./Utils";
-import Input from "./Input";
+import classnames from "classnames";
+import {appendClassIfAbsent} from "./Utils";
 
 
 class InputLabel extends Component {
@@ -22,12 +22,6 @@ export default class InputGroup extends Component {
     static defaultProps = {
         disabled: false,
         className: "input-group",
-
-        //the elements need to append the "element" class
-        elementClassNames: ["input", "icon-input"],
-
-        //the elements need to append the "label" class
-        labelClassNames: ["button"]
     };
 
     static Label = InputLabel;
@@ -38,34 +32,15 @@ export default class InputGroup extends Component {
     }
 
     render() {
-        const {block, children, className, elementClassNames, labelClassNames} = this.props;
-        let newChildren = children;
+        const {block, children, className, ...otherProps} = this.props;
 
-        let map = new Map();
-        setValueInMap(map, "block", block ? "block" : null);
-        let newClassName = generateClassName(map, className);
+        let clsName = classnames(className, {
+            block: block
+        });
 
-        if (newChildren) {
-            newChildren = updateChildrenByCallback(newChildren, (elem) => {
-                //ensure the class "elem" is appended for sub input element
-                if (hasClass(elem, elementClassNames)) {
-                    let suffix = "element";
-                    if (block && hasClass(elem, "input")) {
-                        suffix = "expanded " + suffix;
-                    }
-                    return this.getNewElement(elem, suffix);
-                }
-
-                //ensure the class "label" is appended
-                if (hasClass(elem, labelClassNames)) {
-                    return this.getNewElement(elem, "label");
-                }
-                return elem;
-            });
-        }
         return (
-            <div className={newClassName}>
-                {newChildren}
+            <div className={clsName} {...otherProps}>
+                {children}
             </div>
         )
     }

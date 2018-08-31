@@ -9,9 +9,9 @@ export default class InputType extends ComponentDescTemplate {
 
     renderComponent() {
         return <div>
-            <Input type="number" placeholder="type=number"/>
+            <Input nativeType="number" placeholder="type=number"/>
             <br/><br/>
-            <Input type="date"/>
+            <Input nativeType="date"/>
         </div>;
     }
 

@@ -1,23 +1,32 @@
 import React, {Component} from "react";
-import {setValueInMap, generateClassName} from "./Utils";
+import classnames from "classnames";
+import PropTypes from "prop-types";
 
 class IconInput extends Component {
     static defaultProps = {
         disabled: false,
         className: "icon-input",
+        withinGroup: false
+    };
+
+    static propTypes = {
+        leftIcon: PropTypes.bool,
+        size: PropTypes.string,
+        block: PropTypes.bool,
+        withinGroup: PropTypes.bool, //whether this input is under controlled by a input-group
     };
 
     render() {
-        const {children, leftIcon, className, size, block} = this.props;
+        const {children, leftIcon, className, size, block, withinGroup} = this.props;
 
-        let map = new Map();
-        setValueInMap(map, "leftIcon", leftIcon ? "left-icon" : null);
-        map.set("size", size);
-        map.set("block", block ? "block" : null);
+        let clsName = classnames(className, {
+            "left-icon": leftIcon,
+            [size]: size,
+            block: block,
+            element: withinGroup //add 'element' to class if this input is under controlled by input-group
+        });
 
-        let newClassName = generateClassName(map, className);
-
-        return <div className={newClassName}>
+        return <div className={clsName}>
             {children}
         </div>;
     }
@@ -26,10 +35,22 @@ class IconInput extends Component {
 
 class Input extends Component {
     static defaultProps = {
-        type: "text",
-        disabled: false,
+        nativeType: "text",
         className: "input",
+        expanded: false,
+        withinGroup: false,
         placeholder: ""
+    };
+
+    static propTypes = {
+        size: PropTypes.string,
+        nativeType: PropTypes.string,
+        block: PropTypes.bool,
+        className: PropTypes.string,
+        placeholder: PropTypes.string,
+        disabled: PropTypes.bool,
+        withinGroup: PropTypes.bool, //whether this input is under controlled by a input-group
+        expanded: PropTypes.bool // whether the input is expanded in input-group, it only take effect with input-group
     };
 
     static IconInput = IconInput;
@@ -37,22 +58,24 @@ class Input extends Component {
     render() {
         const {
             size,
-            type,
+            nativeType,
             block,
             className,
             placeholder,
-            disabled,
-            rootStyle
+            expanded,
+            withinGroup,
+            ...otherProps
         } = this.props;
 
-        let map = new Map();
-        setValueInMap(map, "size", size);
-        setValueInMap(map, "block", block ? "block" : null);
-        setValueInMap(map, "disabled", disabled ? "disabled" : null);
-        let newClassName = generateClassName(map, className);
+        let clsName = classnames(className, {
+            [size]: size,
+            expanded: expanded,
+            element: withinGroup,
+            block: block
+        });
 
         return (
-            <input className={newClassName} type={type} placeholder={placeholder} style={rootStyle}/>
+            <input className={clsName} type={nativeType} placeholder={placeholder} {...otherProps}/>
         );
 
     }

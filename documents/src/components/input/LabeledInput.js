@@ -12,17 +12,17 @@ export default class LabeledInput extends ComponentDescTemplate {
             <div>
                 <InputGroup>
                     <InputGroup.Label>Info</InputGroup.Label>
-                    <Input/>
+                    <Input withinGroup expanded/>
                 </InputGroup>
                 <br/><br/>
                 <InputGroup>
-                    <Input/>
+                    <Input withinGroup expanded/>
                     <InputGroup.Label>Info</InputGroup.Label>
                 </InputGroup>
                 <br/><br/>
                 <InputGroup>
                     <InputGroup.Label>Info</InputGroup.Label>
-                    <Input/>
+                    <Input withinGroup expanded/>
                     <InputGroup.Label>Info</InputGroup.Label>
                 </InputGroup>
                 <br/><br/>
@@ -33,29 +33,29 @@ export default class LabeledInput extends ComponentDescTemplate {
                     <InputGroup.Label>
                         <Icon className="fa fa-plane"/>
                     </InputGroup.Label>
-                    <Input/>
+                    <Input withinGroup expanded/>
                     <InputGroup.Label>Info</InputGroup.Label>
                 </InputGroup>
                 <br/><br/>
                 <InputGroup>
                     <InputGroup.Label>Info</InputGroup.Label>
-                    <Input/>
+                    <Input withinGroup/>
                     <InputGroup.Label>Info</InputGroup.Label>
                 </InputGroup>
                 <br/><br/>
                 <InputGroup>
-                    <Input.IconInput leftIcon>
-                        <Input placeholder="search..."/>
+                    <Input.IconInput leftIcon withinGroup>
+                        <Input withinGroup expanded placeholder="search..."/>
                         <Icon className="fa fa-search icon"/>
                     </Input.IconInput>
-                    <Button>Search</Button>
+                    <Button withinGroup>Search</Button>
                 </InputGroup>
                 <br/><br/>
                 <InputGroup>
-                    <InputGroup.Label>
+                    <InputGroup.Label withinGroup>
                         <input type="radio"/>
                     </InputGroup.Label>
-                    <Input/>
+                    <Input withinGroup expanded/>
                 </InputGroup>
             </div>
 
@@ -65,23 +65,22 @@ export default class LabeledInput extends ComponentDescTemplate {
     renderReactCode() {
         return `
 import {Input, IconInput, Icon, InputGroup, Button} from "react-wui";
-
 <InputGroup>
     <InputGroup.Label>Info</InputGroup.Label>
-    <Input/>
+    <Input withinGroup expanded/>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
-    <Input/>
+    <Input withinGroup expanded/>
     <InputGroup.Label>Info</InputGroup.Label>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
     <InputGroup.Label>Info</InputGroup.Label>
-    <Input/>
+    <Input withinGroup expanded/>
     <InputGroup.Label>Info</InputGroup.Label>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
     <InputGroup.Label>
         <Icon className="fa fa-calculator"/>
@@ -89,29 +88,29 @@ import {Input, IconInput, Icon, InputGroup, Button} from "react-wui";
     <InputGroup.Label>
         <Icon className="fa fa-plane"/>
     </InputGroup.Label>
-    <Input/>
+    <Input withinGroup expanded/>
     <InputGroup.Label>Info</InputGroup.Label>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
     <InputGroup.Label>Info</InputGroup.Label>
-    <Input/>
+    <Input withinGroup/>
     <InputGroup.Label>Info</InputGroup.Label>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
-    <Input.IconInput leftIcon>
-        <Input placeholder="search..."/>
+    <Input.IconInput leftIcon withinGroup>
+        <Input withinGroup expanded placeholder="search..."/>
         <Icon className="fa fa-search icon"/>
     </Input.IconInput>
-    <Button>Search</Button>
+    <Button withinGroup>Search</Button>
 </InputGroup>
-
+<br/><br/>
 <InputGroup>
-    <InputGroup.Label>
+    <InputGroup.Label withinGroup>
         <input type="radio"/>
     </InputGroup.Label>
-    <Input/>
+    <Input withinGroup expanded/>
 </InputGroup>
 `;
     }

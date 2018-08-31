@@ -35,9 +35,9 @@ module.exports = {
             "redux-thunk",
             'react-intl',
             'moment'
-        ],
+        ]
 
-        "react-wui": ["react-wui"]
+        // "react-wui": ["react-wui"]  //pack all react-wui components in on bundle js file
     },
 
     output: {
@@ -148,6 +148,7 @@ module.exports = {
     // devtool: 'cheap-module-eval-source-map',
     // devtool: 'source-map',
     // devtool: 'inline-source-map',
+
     devtool: 'eval-source-map',// for development, 点开可以看到webpack://目录
 
     devServer: {
