@@ -16,7 +16,7 @@ export default class CompactDropdown extends ComponentDescTemplate {
 
     renderComponent() {
         return (
-            <div>
+            `<div>
                 <Dropdown type="button">
                     <ButtonGroup onClick={::this.clickButtonGroup}>
                         <Button outline color="green">bottom left</Button>
@@ -28,7 +28,7 @@ export default class CompactDropdown extends ComponentDescTemplate {
                         <Menu.Item value={4} text="Action 4"/>
                     </Menu>
                 </Dropdown>
-            </div>
+            </div>`
         );
     }
 
